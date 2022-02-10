@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Light</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body class="bg-light">
+    <header>
+        <h1 class="text-center pt-5 pb-5">Light</h1>
+    </header>
+    <main>
+        <section class="text-center">
+            <div id="light" class="light rounded-circle m-auto pt-5 " style="width: 500px; height: 500px;">
+            </div>
+            <div class="p-5">
+                <button onclick="document.getElementById('light').style.backgroundColor='white'">Make White</button>
+                <button id="Make-red" onclick="makeRed()">Make red</button>
+                <button id="Make-blue">Make blue</button>
+                <button id="Make-yellow">Make yellow</button>
+                <button id="Make-green">Make green</button>
+                <button id="Make-tomato">Make tomato</button>
+                <button id="Make-purple">Make purple</button>
+            </div>
+        </section>
+    </main>
+    <script>
+        function makeRed() {
+            document.getElementById('light').style.backgroundColor = "red";
+        }
+        const makeBlueBtn = document.getElementById('Make-blue');
+        makeBlueBtn.onclick = makeBlue;
+        function makeBlue() {
+            document.getElementById('light').style.backgroundColor = 'blue';
+        }
+        const makeYelloeBtn = document.getElementById('Make-yellow');
+        makeYelloeBtn.onclick = function () {
+            document.getElementById('light').style.backgroundColor = 'yellow';
+        }
+        document.getElementById("Make-green").addEventListener("click", makegreen);
+        function makegreen() {
+            document.getElementById('light').style.background = "green";
+        }
+        const makeTomatoBtn = document.getElementById('Make-tomato');
+        makeTomatoBtn.addEventListener("click", makeTomato);
+        function makeTomato() {
+            document.getElementById('light').style.backgroundColor = 'tomato';
+        }
+        // document.getElementById("Make-purple").addEventListener("click", function () {
+        //     document.getElementById('ligth').style.background = 'purple';
+        // });
+        // document.getElementById("Make-purple").addEventListener("click", function () {
+        //     document.getElementById('ligth').style.backgroundColor = "red";
+        //     document.getElementById('light').style.backgroundColor = "red";
+
+        // });
+        const makePurpleBtn = document.getElementById('Make-purple');
+        makePurpleBtn.addEventListener("click", function () {
+            // document.getElementById('ligth').style.backgroundColor = "purple";
+            document.getElementById('light').style.backgroundColor = "purple";
+        });
+
+    </script>
+
+</body>
+
+</html>
