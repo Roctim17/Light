@@ -16,17 +16,23 @@
     </header>
     <main>
         <section class="text-center">
-            <div id="light" class="light rounded-circle m-auto pt-5 " style="width: 500px; height: 500px;">
+            <div class="row">
+                <div class="col-md-12 col-sm-12">
+                    <div id="light" class="light rounded-circle m-auto pt-5 " style="width: 500px; height: 500px;">
+                    </div>
+                </div>
             </div>
-            <div class="p-5">
-                <button onclick="document.getElementById('light').style.backgroundColor='white'">Make White</button>
-                <button id="Make-red" onclick="makeRed()">Make red</button>
-                <button id="Make-blue">Make blue</button>
-                <button id="Make-yellow">Make yellow</button>
-                <button id="Make-green">Make green</button>
-                <button id="Make-tomato">Make tomato</button>
-                <button id="Make-purple">Make purple</button>
-            </div>
+
+            <button class="rounded p-3 m-3"
+                onclick="document.getElementById('light').style.backgroundColor='white'">Make
+                White</button>
+            <button id="Make-red" class="rounded p-3 m-3" onclick="makeRed()">Make red</button>
+            <button id="Make-blue" class="rounded p-3 m-3">Make blue</button>
+            <button id="Make-yellow" class="rounded p-3 m-3">Make yellow</button>
+            <button id="Make-green" class="rounded p-3 m-3">Make green</button>
+            <button id="Make-tomato" class="rounded p-3 m-3">Make tomato</button>
+            <button id="Make-purple" class="rounded p-3 m-3">Make purple</button>
+
         </section>
     </main>
     <script>
